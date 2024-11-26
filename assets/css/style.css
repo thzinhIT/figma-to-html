@@ -27,6 +27,7 @@ body {
   line-height: 1.26; /* 126.316% */
   letter-spacing: -0.76px;
 }
+
 /* =========================header======================================== */
 
 a {
@@ -360,6 +361,7 @@ a {
   background-color: var(--primary-color);
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
@@ -369,4 +371,20 @@ a {
   background: #fff;
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
+}
+/* ============================================feedback============================================ */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: rgb(46, 33, 0);
+}
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
 }
