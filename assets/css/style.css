@@ -376,10 +376,18 @@ a {
 .feedback {
   margin-top: 135px;
   padding: 96px 0;
-  background-color: rgb(46, 33, 0);
+  background: #2e2100;
 }
-.feedback-item {
+
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -387,4 +395,97 @@ a {
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+}
+/* ============================================feratuers===================== */
+.Features{
+  margin-top: 135px;
+  padding: 65px 0;
+  background-color: aqua;
+}
+.Features .body{
+  display: flex;
+ 
+}
+.Features .images{
+  display: flex;
+  gap: 30px;
+}
+.Features .images img{
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.Features .images .lower{
+  margin-top: 34px;
+}
+.Features .content{
+  width: 41%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Features .desc{
+  color: #5F5B53;
+
+font-size: 1.6rem;
+
+
+line-height: 1.75; /* 175% */
+margin-top: 16px;
+}
+.Features .btn{
+  width: 137px;
+height: 50px;
+flex-shrink: 0;
+margin-top: 32px;
+background-color: #FFB900;
 }
